@@ -41,3 +41,5 @@
       - As one application writes data to the pipe file, the other application reads data from it
 - Everything being a file allows you view important system info and write data to devices with simple tools
 - It allows simple tools to be combined to solve more complex problems by sharing data in pipe files, all without additional software
+
+[next](getting-information-on-files.md)
