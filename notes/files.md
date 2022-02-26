@@ -39,3 +39,5 @@
       - Output of an application is a file that hasn't been saved yet
       - A pipe file can allow one application to read data from another completely unrelated application
       - As one application writes data to the pipe file, the other application reads data from it
+- Everything being a file allows you view important system info and write data to devices with simple tools
+- It allows simple tools to be combined to solve more complex problems by sharing data in pipe files, all without additional software
