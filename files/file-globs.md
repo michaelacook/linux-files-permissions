@@ -15,5 +15,7 @@
 - To match a hyphen, the hyphen character must be included at the beginning of the character set 
   - ie. `file[-0-9].txt`
 - Negate a character by placing a `^` or `!` at the beginning of a character set
+- To match any of a list of patterns, use curly braces 
+  - ie. `ls -l {*.jpg, *.png, *.gifs}`
 
 [Previous](getting-information-on-files.md)|[Next](character-classes.md)

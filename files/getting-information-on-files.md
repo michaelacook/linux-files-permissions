@@ -20,6 +20,7 @@
 - from left to right, you see file type, permissions, owner, group, number of inodes, file size in bytes (use the `-h` option for human readable file sizes), last modified data/time, file name
 - inodes stores file metadata and a pointer to the data blocks on disk
 - inodes don't store file names, directory inodes store file names and file inode numbers
+- [YouTube video on inodes](https://youtu.be/6KjMlm8hhFA)
 - view hidden files with the `-a` option 
 - in Linux, file are hidden if they start with `.`
 - To see file type, use the command `file [path to file]`
