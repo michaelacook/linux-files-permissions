@@ -1,0 +1,1 @@
+The notes in this directory are not based on the Linkedin Learning course as the other notes are. Instead, this set is based on a [YouTube playlist](https://www.youtube.com/playlist?list=PLtK75qxsQaMKEcAhhnNT7Ov25cPlgxWAT) on the Linux filesystem by tech YouTuber [tutoriaLinux](https://www.youtube.com/c/tutoriaLinux)
