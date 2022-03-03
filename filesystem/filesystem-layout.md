@@ -1,8 +1,9 @@
 # Filesystem Layout 
 - [Filesystem Hierarchy Standard - Linux Journal](https://www.linuxjournal.com/content/filesystem-hierarchy-standard)
+- You can also read about the filesystem hierarchy with the command `man hier`
 - Root level view of filesystem hierarchy: 
 
-```bash 
+```bash
 # my filesystem
 
 .
@@ -32,6 +33,8 @@
 ├── usr
 └── var
 ```
+
+## Overview 
 - Conventions for where to put certain things that are helpful and should be used 
 - root `/` is the top of the hierarchy 
 - `/bin`
