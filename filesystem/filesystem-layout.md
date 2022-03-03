@@ -51,6 +51,10 @@
   - virtual devices and real devices
   - hard drives are listed as `sda` through `sdz` 
   - other types of drives can have other names
+  - `/dev/shm` - files that exist in RAM only, never touching the disk 
+    - Hackers like to put files here 
+    - Good for storing sensitive information and temporary files 
+    - Make sure files here have appropriate permissions so they can't be read or written to by malicious agents (rw---, 600)
 - `/etc`
   - system configuration files 
   - configuration files for user installed software
