@@ -39,3 +39,5 @@ photo_1021.jpg
 ```bash 
 mkdir -p {1..12}/{1..31}
 ```
+
+[Previous](file-globs.md)|[Next](extended-globs.md)
