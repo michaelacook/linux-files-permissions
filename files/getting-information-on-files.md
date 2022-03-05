@@ -25,7 +25,7 @@
 - in Linux, file are hidden if they start with `.`
 - To see file type, use the command `file [path to file]`
 - The `file` command doesn't read file extensions, it reads the actual data of the file so renaming a jpeg to a txt file for instance won't make a difference
-- use the `state [file]` command to view metadata on a file in more detail 
+- use the `stat [file]` command to view metadata on a file in more detail 
 
 ## About extended attributes
 - If the OS supports it files can have extended attributes - most OSes support this 
