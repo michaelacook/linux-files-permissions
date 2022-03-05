@@ -1,5 +1,6 @@
 # File Globs
 - [Bash Globbing Tutorial](https://linuxhint.com/bash_globbing_tutorial/)
+- `man 7 glob` to read about file globbing
 - Actions can be performed on *globs* of files at once using patterns and wild cards
 - "The process of expanding a nonspecific file name containing wildcard characters in specific file names"
 - The `*` wildcard matches zero or more of any character 
@@ -15,7 +16,28 @@
 - To match a hyphen, the hyphen character must be included at the beginning of the character set 
   - ie. `file[-0-9].txt`
 - Negate a character by placing a `^` or `!` at the beginning of a character set
-- To match any of a list of patterns, use curly braces 
-  - ie. `ls -l {*.jpg, *.png, *.gifs}`
 
-[Previous](getting-information-on-files.md)|[Next](character-classes.md)
+## Character classes
+- In addition to using character set patterns, you can also use character classes 
+- A character class is a grouping of like characters, such as letters, numbers, or punctuation 
+  
+|Class|Match|Result|Equivalent|
+|-|-|-|-|
+|[:digit:]|Whole Numbers|1,2,3|[0-9]|
+|[:upper:]|Uppercase Letters|A,B,C|[A-Z]|
+|[:lower:]|Lowercase Letters|a,b,c|[a-z]|
+|[:alpha:]|Uppercase & Lowercase| a,b,C|[a-zA-Z]|
+|[:alnum:]|Uppercase, Lowercase & Numbers|a,B,9|[a-zA-Z0-9]|
+|[:space:]|Tab, Newline, Vertical Tab, Form Feed, Carriage Return, & Space|||
+|[:graph:]|Printable Characters, not including Spaces|||
+|[:print:]|Printable Characters, including Spaces|||
+|[:punct]|Punctuation|!,?,~|[-!"#$%&'()+,./:;<=>?@[\]^_`{|}.]|
+|[:cntrl:]|Nonprintable Control Characters|||
+|[:xdigit:]|Hexadecimal Characters|0-9, A-F, a-f|[0-9A-Fa-f]|
+
+- To use a character class use it inside a character set
+  - ie. `ls file[[:digit:]]`
+  - ie. `ls file[[:digit:][:space:]]`
+  - ie. `ls file[![:alnum:][:punc:]].txt - match any pattern *not* alphanumeric or punctuation
+
+[Previous](getting-information-on-files.md)|[Next](brace-expansion.md)
