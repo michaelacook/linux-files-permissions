@@ -103,5 +103,5 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
 ```
-
+- then run `source .bashrc` to make the changes effective immediately
 -Or, you can just pass the option when you need it
